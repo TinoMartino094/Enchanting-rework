@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "enchanting-rework",
+	"version": "${version}",
+	"name": "Enchanting rework",
+	"description": "A comprehensive overhaul of Minecraft's enchanting mechanics! Offers free item enchanting with zero XP cost, balanced by a \"free\" item tag that changes how repairs disenchanting work. Features include flat-cost anvil repairs, disenchanting drawbacks, and grindstone book splitting for multi-enchanted books.",
+	"authors": [
+		"TinoMartino"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/TinoMartino/enchanting-rework"
+	},
+	"license": "MIT",
+	"icon": "assets/enchanting-rework/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.tino.enchanting.EnchantingRework"
+		]
+	},
+	"mixins": [
+		"enchanting-rework.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~26.1",
+		"java": ">=25",
+		"fabric-api": "*"
+	},
+	"custom": {
+		"fabric-api:client-optional": true
+	}
+}

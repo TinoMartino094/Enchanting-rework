@@ -1,0 +1,20 @@
+{
+	"required": true,
+	"package": "com.tino.enchanting.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"PlayerMixin",
+		"GrindstoneMenuMixin",
+		"GrindstoneResultSlotMixin",
+		"AnvilMenuMixin",
+		"GrindstoneMenuAccessor",
+		"GrindstoneTopSlotMixin",
+		"GrindstoneBottomSlotMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
